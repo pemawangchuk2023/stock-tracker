@@ -38,21 +38,20 @@ export const CONDITION_OPTIONS = [
 
 // TradingView Charts
 export const MARKET_OVERVIEW_WIDGET_CONFIG = {
-	colorTheme: "dark", // dark mode
-	dateRange: "12M", // last 12 months
-	locale: "en", // language
-	largeChartUrl: "", // link to a large chart if needed
-	isTransparent: true, // makes background transparent
-	showFloatingTooltip: true, // show tooltip on hover
-	plotLineColorGrowing: "#0FEDBE", // line color when price goes up
-	plotLineColorFalling: "#0FEDBE", // line color when price falls
-	gridLineColor: "rgba(240, 243, 250, 0)", // grid line color
-	scaleFontColor: "#DBDBDB", // font color for scale
-	belowLineFillColorGrowing: "rgba(41, 98, 255, 0.12)", // fill under line when growing
-	belowLineFillColorFalling: "rgba(41, 98, 255, 0.12)", // fill under line when falling
+	colorTheme: "dark",
+	dateRange: "12M",
+	locale: "en",
+	isTransparent: true,
+	showFloatingTooltip: true,
+	plotLineColorGrowing: "#0FEDBE",
+	plotLineColorFalling: "#0FEDBE",
+	gridLineColor: "rgba(240, 243, 250, 0)",
+	scaleFontColor: "#DBDBDB",
+	belowLineFillColorGrowing: "rgba(41, 98, 255, 0.12)",
+	belowLineFillColorFalling: "rgba(41, 98, 255, 0.12)",
 	belowLineFillColorGrowingBottom: "rgba(41, 98, 255, 0)",
 	belowLineFillColorFallingBottom: "rgba(41, 98, 255, 0)",
-	symbolActiveColor: "rgba(15, 237, 190, 0.05)", // highlight color for active symbol
+	symbolActiveColor: "rgba(15, 237, 190, 0.05)",
 	tabs: [
 		{
 			title: "Financial",
