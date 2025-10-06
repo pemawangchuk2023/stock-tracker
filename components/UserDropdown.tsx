@@ -9,18 +9,17 @@ import {
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
-4;
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { LogOut } from "lucide-react";
 import NavItems from "@/components/NavItems";
+import { signOut } from "@/lib/actions/auth.action";
 
-const UserDropdown = () => {
+const UserDropdown = ({ user }: { user: User }) => {
 	const router = useRouter();
 	const handleSignOut = async () => {
+		await signOut();
 		router.push("/sign-in");
 	};
-
-	const user = { name: "Pema", email: "pema@yahoo.com" };
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
